@@ -31,26 +31,6 @@
 
 全体にNFKC正規化をかける方式は使っていません。数字や記号まで変わることを防ぐため、指定された英字だけを置き換えています。
 
-## GitHub Pagesで公開する
-
-公開用のリポジトリを用意し、少なくとも次の2ファイルを公開元のルートに置きます。このフォルダ全体をリポジトリにする方法でも構いません。
-
-```text
-index.html
-.nojekyll
-```
-
-1. GitHubにファイルをアップロード・コミットします。
-2. リポジトリの **Settings → Pages** を開きます。
-3. **Build and deployment → Source** で **Deploy from a branch** を選択します。
-4. アップロードしたブランチ（例：`main`）と **/(root)** を選択して **Save** を押します。
-5. 公開完了後、Pages設定画面に表示されるURLを開きます。
-6. 英字・日本語・数字・記号を混ぜて入力し、コピーした結果が一致することを確認します。
-
-ビルド処理や独自のGitHub Actions設定は不要です。外部ファイルへの絶対パスがないため、プロジェクト用のURLの下でも使える構成です。
-
-手順の出典：[GitHub Pagesの公開元を設定する（GitHub公式）](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
-
 ## 利用時の注意
 
 フォント変更ではなく、数学用の別の文字に置き換える仕組みです。アプリや端末によって、表示・検索・読み上げの扱いが異なることがあります。Discordでの保存と保存後の表示は、実際の利用環境で確認してください。Discordの公式ツールではありません。
